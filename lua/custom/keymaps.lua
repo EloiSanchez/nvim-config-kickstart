@@ -1,18 +1,6 @@
 -- BASIC
 vim.keymap.set('n', '<leader>x', ':bd | b<CR>', { desc = 'Close current buffer' })
 
--- window movement
-vim.keymap.set('n', '<C-h>', '<C-w><C-h>', { desc = 'Move to left window' })
-vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move to down window' })
-vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move to up window' })
-vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move to right window' })
-
--- movement from terminal
-vim.keymap.set('t', '<C-h>', '<C-\\><C-N><C-w><C-h>', { desc = 'Move to left window' })
-vim.keymap.set('t', '<C-j>', '<C-\\><C-N><C-w><C-j>', { desc = 'Move to down window' })
-vim.keymap.set('t', '<C-k>', '<C-\\><C-N><C-w><C-k>', { desc = 'Move to up window' })
-vim.keymap.set('t', '<C-l>', '<C-\\><C-N><C-w><C-l>', { desc = 'Move to right window' })
-
 -- NVIM TREE
 local api_tree = require 'nvim-tree.api'
 
