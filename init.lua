@@ -92,6 +92,9 @@ require('lazy').setup({
 
       -- Additional lua configuration, makes nvim stuff amazing!
       'folke/neodev.nvim',
+
+      -- For showing signatures
+      'hrsh7th/cmp-nvim-lsp-signature-help',
     },
   },
 
@@ -657,6 +660,7 @@ cmp.setup {
   },
   sources = {
     { name = 'nvim_lsp' },
+    { name = 'nvim_lsp_signature_help' },
     { name = 'luasnip' },
     { name = 'path' },
   },
