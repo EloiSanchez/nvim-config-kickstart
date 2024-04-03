@@ -149,7 +149,7 @@ require('lazy').setup({
           return '<Ignore>'
         end, { expr = true, desc = 'Jump to next hunk' })
 
-        map({ 'n', 'v' }, '<leader>hb', function()
+        map({ 'n', 'v' }, '<leader>hN', function()
           if vim.wo.diff then
             return '[c'
           end

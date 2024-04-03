@@ -1,6 +1,9 @@
 -- BASIC
 vim.keymap.set('n', '<leader>x', ':bd | b<CR>', { desc = 'Close current buffer' })
 
+-- map escape key to ii
+vim.keymap.set({ 'v', 'i' }, 'ii', '<esc>', { desc = 'Escape' })
+
 -- NVIM TREE
 local api_tree = require 'nvim-tree.api'
 
