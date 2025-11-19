@@ -7,12 +7,15 @@ return {
       local lint = require 'lint'
       lint.linters_by_ft = {
         markdown = { 'markdownlint' },
+        sql = { 'sqlfluff' },
+        json = { 'jsonlint' },
       }
 
       -- To allow other plugins to add linters to require('lint').linters_by_ft,
       -- instead set linters_by_ft like this:
       -- lint.linters_by_ft = lint.linters_by_ft or {}
       -- lint.linters_by_ft['markdown'] = { 'markdownlint' }
+      -- lint.linters_by_ft['sql'] = { 'sqlfluff' }
       --
       -- However, note that this will enable a set of default linters,
       -- which will cause errors unless these tools are available:
@@ -27,6 +30,7 @@ return {
       --   ruby = { "ruby" },
       --   terraform = { "tflint" },
       --   text = { "vale" }
+      --
       -- }
       --
       -- You can disable the default linters by setting their filetypes to nil:
